@@ -25,11 +25,9 @@ class ViewController: UITableViewController {
             if item.hasPrefix("nssl") {
                 //this is a picture to load
                 pictures.append(item)
+                pictures.sort()
             }
         }
-        
-        print(pictures)
-        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
